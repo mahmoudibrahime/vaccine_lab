@@ -1,7 +1,7 @@
 <?php
 //    very very very important Code!!!!!!!!
-include 'headpage.html';
-include 'connDB.php';
+ include 'headpage.php';
+ include 'connDB.php';
 ?>
 <!-- html code -->
 <div class="container">

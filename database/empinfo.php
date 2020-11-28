@@ -1,13 +1,12 @@
 <?php
 //    very very very important Code!!!!!!!!
-// include 'headpage.html';
-// require 'connDB.php';
-
-include_once 'emppage.php';
+   include 'headpage.php';  
+   require 'connDB.php';
 ?>
 
 <div class="container">
-    <h3>Human Resources.</h3>
+    <h3>Human Resources department.</h3>
+    <h4>Vaccine Lab Employers</h4><br>
 <table class="table">
   
     <tr>

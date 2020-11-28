@@ -1,10 +1,11 @@
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Vaccine laboratories | Web Page</title>
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QCNsE7Xt5PId0HuaN08NcYZWz0TfWwxZyg&usqp=CAU">
     
 </head>

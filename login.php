@@ -1,5 +1,5 @@
 <?php
-     include 'database/headpage.html';
+     include 'database/headpage.php';
      require 'database/connDB.php';
 
   if(isset($_POST['btn-login']))

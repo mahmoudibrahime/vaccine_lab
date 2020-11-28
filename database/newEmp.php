@@ -1,18 +1,8 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Employer | Page</title>
-    <link rel="stylesheet" href="../styles/bootstrap.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QCNsE7Xt5PId0HuaN08NcYZWz0TfWwxZyg&usqp=CAU">
-</head>
-<body>
-
-<div class="cface"></div>
+<?php include 'headpage.php';?>  <!--include header -->
 
 <div class="container">
-<h3 class="mt-4">Your Information Please..</h3> <br>
+<h3 class="mt-4">Human resources department</h3> 
+<h4>Fill up required information</h4>
 <form action="newEmp.php" method="POST">
   <div class="form-row">
     <div class="form-group col-md-8">
@@ -58,7 +48,6 @@
 </div> 
 
 <?php
- 
  require 'connDB.php'; // include db connection
 if(isset($_POST['empsub']))
 {
@@ -97,5 +86,5 @@ mysqli_close($conn);
 }
  ?>
 
-</body>
-</html>
+<!-- </body>
+</html> -->
