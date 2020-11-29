@@ -1,4 +1,7 @@
-<?php include 'headpage.php';?>  <!--include header -->
+<?php 
+    include 'headpage.php';// include header page
+    require 'connDB.php'; // include db connection
+?>  
 
 <div class="container">
 <h3 class="mt-4">Human resources department</h3> 
@@ -48,7 +51,7 @@
 </div> 
 
 <?php
- require 'connDB.php'; // include db connection
+ 
 if(isset($_POST['empsub']))
 {
     $name = $_POST['name'];

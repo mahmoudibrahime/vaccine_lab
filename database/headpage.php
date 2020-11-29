@@ -30,5 +30,11 @@
                 <a href="https://covid19.who.int/region/emro/country/eg"title="To Know more about Covid-19!!" target="_blank"> WHO Warning about COVID-19: in Egypt Today!</a>
               </div>
                <!--End Exclusive-->
+               <script src="../scripts/jQuery-3.5.1.js"></script>
+               <script>
+                 $(document).ready(function(){
+                   $('#fadeout').fadeOut(6000);
+                 });
+               </script>
 </body>
 </html>

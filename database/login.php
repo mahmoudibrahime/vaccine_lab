@@ -1,6 +1,14 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+<!-- PHP START -->
 <?php
-     include 'database/headpage.php';
-     require 'database/connDB.php';
+ include 'headpage.php';
+ require 'connDB.php';
 
   if(isset($_POST['btn-login']))
 {
@@ -30,5 +38,8 @@
   }
 }
   mysqli_close($conn);
-?>
-  
+?>  
+<!-- PHP END -->
+
+  </body>
+  </html>
