@@ -29,7 +29,7 @@
       //   " <p class='alert alert-info'>Hello, $row[0]</p>"
       //   );}//end while didn`t work
       
-      echo(" <p class='alert alert-info'>Hello, $name</p>");
+      echo(" <p><b>Hello, $name<b></p>");
   }
   else
   {

@@ -13,6 +13,6 @@ if(!$conn)
 }
 else
 {
-    echo('<p class="alert alert-info" id="fadeout">You are Connected to DataBase.</p><br>');
+    echo('<p id="fadeout"><b>You are Connected to DataBase.</b></p><br>');
 }
 ?>

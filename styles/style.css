@@ -11,8 +11,7 @@
 .cface{
 width:100%;
 height:500px;
-background-image:linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.3)),
-url('images/content.jpg');
+background-image :linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cface.jpg");
 background-size:cover;
 background-attachment: fixed;
 }
@@ -59,6 +58,33 @@ border-radius: 50%;
     font-size: small;
     line-height: 30px;
 }
-
+/*
+About Page
+*/
+.vision{
+    width:100%;
+    height:400px;
+    background-image: url();
+}
+.mission{
+    width:100%;
+    height:400px;
+    background-image: url();
+}
+.values{
+    width:100%;
+    height: 500px;
+    background-color: whitesmoke;
+}
+.middle{
+    width: 100%;
+    height:200px;
+    text-align: center;
+    color: blue;
+    padding:20px 0px;
+}
+/*
+ End About Page
+*/
 
 
