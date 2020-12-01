@@ -17,7 +17,22 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+        <!-- burger btn -->
+        <div id ="nav-button">
+          <div class="container">
+            <h5 class="mt-1">Vaccine Laboratories</h5>
+          <form action="" method="POST">
+            Employer name
+            <input class="form-control mr-sm-2" type="text" name="name" placeholder="employer name" aria-label="Search">
+            Employer password
+            <input class="form-control mr-sm-2" type="password" name="password" placeholder="password" aria-label="Search">
+            <button class="btn btn-primary btn-block mt-3" name="btn-login" type="submit">LogIn</button>
+            <hr>
+            <a class="btn btn-outline-dark btn-block">I`m not an employer</a>
+          </form>
+        </div>
+        </div>
+        <!-- end burger btn -->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <a class="navbar-brand font-weight-bolder" href="#" >Vaccine Laboratories</a>
           <ul class="navbar-nav mr-auto">
@@ -189,7 +204,7 @@
    <div class="address d-flex justify-content-between">
      <div class="alert alert-dark p-4">
        <strong>Technical Support contact us</strong><hr>
-      <a href="#"><i class="far fa-clock"> 8am - 10pm<br> Saturday - Saturday Friday Off.</i></a>
+      <p href="#" style="color:royalblue"><i class="far fa-clock"> 8am - 10pm<br> Saturday - Saturday Friday Off.</i></p>
     </div>
      <div class="alert alert-dark p-4">
       <strong>On Social Media</strong><hr>
@@ -207,6 +222,12 @@
 <!--End Footer-->
 
 <script src="scripts/jQuery-3.5.1.js"></script>
-
+<script>
+  $(document).ready(function(){
+    $('.navbar-toggler').click(function(){
+      $('#nav-button').fadeToggle('3000');
+    });
+  });
+</script>
 </body>
 </html>
