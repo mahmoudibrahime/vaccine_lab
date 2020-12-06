@@ -6,6 +6,7 @@
   </head>
   <body>
 <!-- PHP START -->
+
 <?php
  include 'headpage.php';
  require 'connDB.php';
@@ -25,12 +26,8 @@
     $result = mysqli_query($conn, $sql);
     if($result)
     {
-      // while($row = mysqli_fetch_row($result)){echo(
-      //   " <p class='alert alert-info'>Hello, $row[0]</p>"
-      //   );}//end while didn`t work
-      
-      echo(" <p><b>Hello, $name<b></p>");
-  }
+        echo(" <p><b>Hello, $name<b></p>");
+    }
   else
   {
     echo'Sql Error! '.mysqli_error($conn);

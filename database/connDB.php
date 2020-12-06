@@ -1,8 +1,6 @@
 <?php
-$host = 'localhost';
-$user ='root';
-$pass = '';
-$DBname = 'laboratory';
+require_once 'configDB.php';
+
 $conn = mysqli_connect($host, $user, $pass, $DBname);
 
 if(!$conn)
@@ -13,6 +11,6 @@ if(!$conn)
 }
 else
 {
-    echo('<p id="fadeout"><b>You are Connected to DataBase.</b></p><br>');
+    echo("<p id='fadeout'><b>You are Connected to Database.</b></p><br>");
 }
 ?>
