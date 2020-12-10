@@ -2,15 +2,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LogIn Form | employee</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QCNsE7Xt5PId0HuaN08NcYZWz0TfWwxZyg&usqp=CAU">
   </head>
   <body>
-<!-- PHP START -->
-
 <?php
  include 'headpage.php';
  require 'connDB.php';
-
+ ?>
+ <div class="container">
+<?php
   if(isset($_POST['btn-login']))
 {
   $name = $_POST['name'];
@@ -18,7 +19,7 @@
   
   if ($name=='' || $password=='')
   {
-    echo"<P class='alert alert-info'>go back and fill with true data</p>";
+    echo"<P class='alert alert-info'>go back and fill in with true data</p>";
   }
   else
   {
@@ -26,7 +27,7 @@
     $result = mysqli_query($conn, $sql);
     if($result)
     {
-        echo(" <p><b>Hello, $name<b></p>");
+     echo("<p class='font-weight-bolder'>Hello, $name</p>");
     }
   else
   {
@@ -36,7 +37,9 @@
 }
   mysqli_close($conn);
 ?>  
-<!-- PHP END -->
 
+  <?php require '../service/calculator.php';?>
+
+  </div>  <!-- end container -->
   </body>
   </html>

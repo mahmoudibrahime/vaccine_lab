@@ -48,6 +48,7 @@
 </div>
 </div>
 <br><br>
+<!-- end header -->
 <div class="container">
 <h4> OUR TESTING MENU INCLUDES IN VACCINE LABORATORIES</h4>
 <table class="table table-light">
@@ -72,25 +73,23 @@ else
     echo("<p id='fadeout'><b>You are Connected to Database.</b></p><br>");
 }
 
-if (!isset ($_GET['page']) ) {  
-  $page = 1;  
+if (!isset ($_GET['pageno']) ) {  
+  $pageno = 1;  
 } else {  
-  $page = $_GET['page'];  
+  $pageno = $_GET['pageno'];  
 }  
-$results_per_page = 10;  
-$page_first_result = ($page-1) * $results_per_page;    
+// $no_of_records_per_page = 10;  
+$offset = ($pageno-1) * 10;    
+$total_pages_sql = "SELECT COUNT(*) FROM lab_test";
+$result = mysqli_query($conn, $total_pages_sql);
 
-$sql = "SELECT id, test_name, synonymus FROM lab_test ";
-$result = mysqli_query($conn, $sql);
-
-$number_of_result = mysqli_num_rows($result);  
+$total_rows = mysqli_fetch_array($result)[0];  
   //determine the total number of pages available  
-$number_of_page = ceil ($number_of_result / $results_per_page);  
-$sql = "SELECT id, test_name, synonymus FROM lab_test LIMIT " . $page_first_result . ',' . $results_per_page;  
-   
-$result = mysqli_query($conn, $sql);  
-if(mysqli_num_rows($result) > 0){
-  while($row = mysqli_fetch_assoc($result)){
+$number_of_page = ceil ($total_rows / 10);  
+$sql = "SELECT * FROM lab_test LIMIT $offset, 10";
+$res_data = mysqli_query($conn, $sql);
+
+  while($row = mysqli_fetch_array($res_data)){
     ?>
     <table class="table table-light">
  <th scope="row"><?php echo $row['id']?></th>
@@ -102,9 +101,9 @@ if(mysqli_num_rows($result) > 0){
     <?php
 }
 
-for($page = 1; $page<= $number_of_page; $page++) {  
-  echo '<a href = "index2.php?page=' . $page . ' " > ' . $page . ' </a>';
-}
+for($pageno = 1; $pageno <= $number_of_page; $pageno++) 
+{  
+  echo "<a href = 'testmenu.php?pageno= $pageno' style='padding-inline:5px;' >$pageno</a>";
 }
 
 mysqli_close($conn)
@@ -121,4 +120,6 @@ mysqli_close($conn)
               
 </body>
 </html>
+
+<!-- best example for pagination code learn -->
  

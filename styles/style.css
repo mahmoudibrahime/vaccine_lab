@@ -52,7 +52,6 @@ section{
     width:200px;
     height:40px;
 }
-
 .footer{
     width:100%;
     height:auto;
@@ -71,9 +70,9 @@ border-radius: 50%;
     font-size: small;
     line-height: 30px;
 }
-/*
-About Page
-*/
+
+/* About Page */
+
 .vision{
     width:100%;
     height:400px;
