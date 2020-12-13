@@ -2,30 +2,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ask Expert</title>
+    <title>Test Info | Vaccine Laboratories</title>
     <link rel="stylesheet" href="../styles/bootstrap.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <div class="container">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        
-        <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> -->
-          <a class="navbar-brand font-weight-bolder" href="#" >Lab Test Menu</a>
-          <a class="btn btn-outline-primary" onclick="window.history.back()"><i class="fas fa-home"></i></a>
-        <!-- </div>  -->
-     </div>
-</nav>
+<?php require 'template.php';?>
+
 <!-- end nav-bar -->
 
 <div class="jumbotron jumbotron-fluid m-5">
   <div class="container">
-    <h2 class="display-4">Laboratory Testing list</h2><hr>
+    <h2 class="display-4">Laboratory Testing list</h2>
+    <hr style="border-top:2px dotted #ccc">
     <p class="lead">All testing lists provided with care, accuracy and experiece with world standards.</p>
   </div>
 </div>
@@ -47,7 +38,8 @@
  </ol>
 </div>
 </div>
-<br><br>
+<br>
+<br>
 <!-- end header -->
 <div class="container">
 <h4> OUR TESTING MENU INCLUDES IN VACCINE LABORATORIES</h4>
@@ -60,7 +52,7 @@
   </tbody>
 </table><hr>
 <?php
-  require_once '../database/configDB.php';
+  require '../database/configDB.php';
   $conn = mysqli_connect($host, $user, $pass, $DBname);
   if(!$conn)
 {
@@ -97,13 +89,13 @@ $res_data = mysqli_query($conn, $sql);
  <td><?php echo $row['synonymus']?></td>
 </tr>
 </tbody>
-</table>  
+</table>
     <?php
 }
 
 for($pageno = 1; $pageno <= $number_of_page; $pageno++) 
 {  
-  echo "<a href = 'testmenu.php?pageno= $pageno' style='padding-inline:5px;' >$pageno</a>";
+  echo "<a href = 'testmenu.php?pageno= $pageno' class='alert-secondary' style='padding-inline:7px;' >$pageno</a>";
 }
 
 mysqli_close($conn)

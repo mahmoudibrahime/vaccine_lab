@@ -9,18 +9,8 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-           <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button> -->
-           
-           <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> -->
-             <a class="navbar-brand font-weight-bolder" href="#" >Our Services</a>
-             <a class="btn btn-outline-primary" onclick="window.history.back()"><i class="fas fa-home"></i></a>
-           <!-- </div>  -->
-        </div>
-   </nav>
+<?php require 'template.php';?>
+
         <script src="../scripts/jQuery-3.5.1.js"></script> 
               
 </body>
