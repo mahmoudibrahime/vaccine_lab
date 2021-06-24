@@ -9,5 +9,5 @@
 - to ensure all missionery work to get your vision to reality
 
 ## Aim
--by complete project point of view ensure easy to use, reality, reusability
+- by complete project point of view ensure easy to use, reality, reusability
 
