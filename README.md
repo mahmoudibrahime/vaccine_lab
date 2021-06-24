@@ -11,7 +11,7 @@
 ## Aim
 - by complete project point of view ensure easy to use, reality, reusability
 
-### Refrences
+### Referances
 - open source code liberaries
 - HTML, CSS [W3Schools](https://www.w3schools.com/)
 - CSS liberary [BootStrape 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
